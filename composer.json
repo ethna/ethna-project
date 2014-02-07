@@ -1,0 +1,14 @@
+{
+    "name": "ethna/ethna-project",
+    "description": "Ethna project",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Shuhei Tanuma",
+            "email": "shuhei.tanuma@gree.co.jp"
+        }
+    ],
+    "require": {
+
+    }
+}

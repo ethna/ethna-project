@@ -9,6 +9,15 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.3",
+        "ethna/ethna-composer-handler": "*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Ethna\\ComposerHandler\\SciprtHandler::buildProject"
+        ]
+    },
+    "extra": {
+        "ethna-app-name": "example"
     }
 }

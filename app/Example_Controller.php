@@ -15,9 +15,11 @@ $app = BASE . "/app";
 $lib = BASE . "/lib";
 set_include_path(implode(PATH_SEPARATOR, array($app, $lib)) . PATH_SEPARATOR . get_include_path());
 
+// NOTE(chobie): 今の実装だとethnaへのinclude_path通さないとerrorでやすい
+set_include_path(BASE . "/vendor/ethna/ethna" . PATH_SEPARATOR . get_include_path());
 
 /** including application library. */
-require_once 'Ethna/Ethna.php';
+require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . "vendor/autoload.php";
 require_once 'Example_Error.php';
 require_once 'Example_ActionClass.php';
 require_once 'Example_ActionForm.php';

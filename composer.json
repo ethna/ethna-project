@@ -14,7 +14,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "Ethna\\ComposerHandler\\SciprtHandler::buildProject"
+            "Ethna\\ComposerHandler\\ScriptHandler::buildProject"
         ]
     },
     "extra": {

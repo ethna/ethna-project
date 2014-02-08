@@ -18,7 +18,8 @@
     },
     "suggest": {
         "ethna/ethna-soap": "add SOAP features",
-        "ethna/ethna-appobject": "add AppObject features"
+        "ethna/ethna-appobject": "add AppObject features",
+        "ethna/ethna-mailsender": "add mail sender features"
     },
     "scripts": {
         "post-install-cmd": [

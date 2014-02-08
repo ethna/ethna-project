@@ -1,19 +1,4 @@
 <?php
-/**
- *  {$action_path}
- *
- *  @author     {$author}
- *  @package    Example
- *  @version    $Id: d46949f247189a01bccbdfcda06056dbfbed5ca6 $
- */
-
-/**
- *  {$action_name} Form testcase.
- *
- *  @author     {$author}
- *  @access     public
- *  @package    Example
- */
 class {$action_form}_TestCase extends Ethna_UnitTestCase
 {
     /**

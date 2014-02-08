@@ -1,21 +1,4 @@
 <?php
-// vim: foldmethod=marker
-/**
- *  Example_ActionClass.php
- *
- *  @author     {$author}
- *  @package    Example
- *  @version    $Id: fa6d926943d0d227b86f127fa6d4ab9fd084e19d $
- */
-
-// {{{ Example_ActionClass
-/**
- *  action execution class
- *
- *  @author     {$author}
- *  @package    Example
- *  @access     public
- */
 class Example_ActionClass extends Ethna_ActionClass
 {
     /**
@@ -54,5 +37,4 @@ class Example_ActionClass extends Ethna_ActionClass
         return parent::perform();
     }
 }
-// }}}
 

@@ -1,19 +1,4 @@
 <?php
-/**
- *  {$action_path}
- *
- *  @author     {$author}
- *  @package    Example
- *  @version    $Id: 6123ad3b554d1510cf2d6cd7d3421f4bb8264321 $
- */
-
-/**
- *  {$action_name} Form implementation.
- *
- *  @author     {$author}
- *  @access     public
- *  @package    Example
- */
 class {$action_form} extends Example_ActionForm
 {
     /**

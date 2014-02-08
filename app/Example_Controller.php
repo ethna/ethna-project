@@ -1,52 +1,29 @@
 <?php
-/**
- *  Example_Controller.php
- *
- *  @author     {$author}
- *  @package    Example
- *  @version    $Id: 7546b906d053ab476489768177a90b61bea4c6f7 $
- */
+call_user_func(function(){
+    require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . "vendor/autoload.php";
 
-/** Application base directory */
-define('BASE', dirname(dirname(__FILE__)));
+    /** Application base directory */
+    define('BASE', dirname(dirname(__FILE__)));
+    /** include_path setting (adding "/app" and "/lib" directory to include_path) */
+    set_include_path(implode(PATH_SEPARATOR, array(
+            BASE . "/app",
+            BASE . "/lib")) . PATH_SEPARATOR . get_include_path());
+    set_include_path(BASE . "/vendor/ethna/ethna" . PATH_SEPARATOR . get_include_path());
 
-/** include_path setting (adding "/app" and "/lib" directory to include_path) */
-$app = BASE . "/app";
-$lib = BASE . "/lib";
-set_include_path(implode(PATH_SEPARATOR, array($app, $lib)) . PATH_SEPARATOR . get_include_path());
+    /** including application library. */
+    require_once 'Example_Error.php';
+    require_once 'Example_ActionClass.php';
+    require_once 'Example_ActionForm.php';
+    require_once 'Example_ViewClass.php';
+    require_once 'Example_UrlHandler.php';
+});
 
-// NOTE(chobie): 今の実装だとethnaへのinclude_path通さないとerrorでやすい
-set_include_path(BASE . "/vendor/ethna/ethna" . PATH_SEPARATOR . get_include_path());
-
-/** including application library. */
-require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . "vendor/autoload.php";
-require_once 'Example_Error.php';
-require_once 'Example_ActionClass.php';
-require_once 'Example_ActionForm.php';
-require_once 'Example_ViewClass.php';
-require_once 'Example_UrlHandler.php';
-
-/**
- *  Example application Controller definition.
- *
- *  @author     {$author}
- *  @access     public
- *  @package    Example
- */
 class Example_Controller extends Ethna_Controller
 {
-    /**#@+
-     *  @access protected
-     */
-
-    /**
-     *  @var    string  Application ID(appid)
-     */
+    /** @var    string  Application ID(appid) */
     protected $appid = 'EXAMPLE';
 
-    /**
-     *  @var    array   forward definition.
-     */
+    /** @var    array   forward definition. */
     protected $forward = array(
         /*
          *  TODO: write forward definition here.
@@ -59,9 +36,7 @@ class Example_Controller extends Ethna_Controller
          */
     );
 
-    /**
-     *  @var    array   action definition.
-     */
+    /** @var    array   action definition. */
     protected $action = array(
         /*
          *  TODO: write action definition here.
@@ -77,9 +52,7 @@ class Example_Controller extends Ethna_Controller
          */
     );
 
-    /**
-     *  @var    array   SOAP action definition.
-     */
+    /** @var    array   SOAP action definition. */
     protected $soap_action = array(
         /*
          *  TODO: write action definition for SOAP application here.
@@ -89,9 +62,7 @@ class Example_Controller extends Ethna_Controller
          */
     );
 
-    /**
-     *  @var    array       application directory.
-     */
+    /** @var    array       application directory. */
     protected $directory = array(
         'action'        => 'app/action',
         'action_cli'    => 'app/action_cli',
@@ -112,24 +83,18 @@ class Example_Controller extends Ethna_Controller
         'test'          => 'app/test',
     );
 
-    /**
-     *  @var    array       database access definition.
-     */
+    /** @var    array       database access definition. */
     protected $db = array(
         ''              => DB_TYPE_RW,
     );
 
-    /**
-     *  @var    array       extention(.php, etc) configuration.
-     */
+    /** @var    array       extention(.php, etc) configuration. */
     protected $ext = array(
         'php'           => 'php',
         'tpl'           => 'tpl',
     );
 
-    /**
-     *  @var    array   class definition.
-     */
+    /** @var    array   class definition. */
     public $class = array(
         /*
          *  TODO: When you override Configuration class, Logger class,

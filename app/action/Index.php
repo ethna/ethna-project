@@ -1,25 +1,7 @@
 <?php
-/**
- *  Index.php
- *
- *  @author    {$author}
- *  @package   Example
- *  @version   $Id: f7f65ca685dbbc3c64a4ee187635d34cb5680e5e $
- */
-
-/**
- *  Index form implementation
- *
- *  @author    {$author}
- *  @access    public
- *  @package   Example
- */
-
 class Example_Form_Index extends Example_ActionForm
 {
     /**
-     *  @access   protected
-     *
      *  @var      array   form definition.
      */
     protected $form = array(
@@ -54,7 +36,6 @@ class Example_Form_Index extends Example_ActionForm
     /**
      *  Form input value convert filter : sample
      *
-     *  @access protected
      *  @param  mixed   $value  Form Input Value
      *  @return mixed           Converted result.
      */
@@ -67,13 +48,6 @@ class Example_Form_Index extends Example_ActionForm
     */
 }
 
-/**
- *  Index action implementation.
- *
- *  @author     {$author}
- *  @access     public
- *  @package    Example
- */
 class Example_Action_Index extends Example_ActionClass
 {
     /**

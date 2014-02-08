@@ -1,12 +1,4 @@
 <?php
-/**
- *  Example_Error.php
- *
- *  @package   Example
- *
- *  $Id: 0fa9f8016b6019fca765272649b7a2e774c43068 $
- */
-
 /*--- Application Error Definition ---*/
 /*
  *  TODO: Write application error definition here.

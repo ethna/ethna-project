@@ -1,21 +1,4 @@
 <?php
-// vim: foldmethod=marker
-/**
- *  Example_ActionForm.php
- *
- *  @author     {$author}
- *  @package    Example
- *  @version    $Id: 8be5990e72ba7251813b07f304cee1b3d3c08791 $
- */
-
-// {{{ Example_ActionForm
-/**
- *  ActionForm class.
- *
- *  @author     {$author}
- *  @package    Example
- *  @access     public
- */
 class Example_ActionForm extends Ethna_ActionForm
 {
     /**#@+
@@ -62,5 +45,4 @@ class Example_ActionForm extends Ethna_ActionForm
     }
 
 }
-// }}}
 

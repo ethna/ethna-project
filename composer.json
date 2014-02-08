@@ -11,12 +11,21 @@
     "require": {
         "php": ">=5.3.3",
         "ethna/ethna-composer-handler": "*",
-        "ethna/ethna": "dev-master"
+        "ethna/ethna-generator": "*",
+        "ethna/ethna-cli": "*",
+        "ethna/ethna": "dev-master",
+        "twig/twig": "1.*"
+    },
+    "suggest": {
+        "ethna/ethna-soap": "add SOAP features"
     },
     "scripts": {
         "post-install-cmd": [
             "Ethna\\ComposerHandler\\ScriptHandler::buildProject"
         ]
+    },
+    "autoload": {
+        "psr-0" : {"Example" : "app/Example"}
     },
     "extra": {
         "ethna-app-name": "example"

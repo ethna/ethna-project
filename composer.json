@@ -13,13 +13,15 @@
         "ethna/ethna-composer-handler": "*",
         "ethna/ethna-generator": "*",
         "ethna/ethna-cli": "*",
-        "ethna/ethna": "dev-master",
-        "twig/twig": "1.*"
+        "ethna/ethna-i18n": "*",
+        "ethna/ethna-urlhandler": "*",
+        "ethna/ethna": "dev-master"
     },
     "suggest": {
         "ethna/ethna-soap": "add SOAP features",
         "ethna/ethna-appobject": "add AppObject features",
-        "ethna/ethna-mailsender": "add mail sender features"
+        "ethna/ethna-mailsender": "add mail sender features",
+        "twig/twig": "1.*"
     },
     "scripts": {
         "post-install-cmd": [

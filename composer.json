@@ -11,7 +11,7 @@
     {
         "type": "package",
         "package": {
-            "name": "smarty/smarty2",
+            "name": "smarty/smarty",
             "version": "2.6.28",
             "dist": { "url": "http://www.smarty.net/files/Smarty-2.6.28.zip", "type": "zip" }
         }
@@ -19,7 +19,7 @@
     {
         "type": "package",
         "package": {
-            "name": "smarty/smarty",
+            "name": "smarty/smarty3",
             "version": "3.1.16",
             "dist": { "url": "http://www.smarty.net/files/Smarty-3.1.16.zip", "type": "zip" }
         }
@@ -34,14 +34,14 @@
         "ethna/ethna-i18n": "*",
         "ethna/ethna-urlhandler": "*",
         "ethna/ethna": "dev-master",
-        "smarty/smarty2": "2.6.*"
+        "smarty/smarty": "2.6.*"
     },
     "suggest": {
         "ethna/ethna-soap": "add SOAP features",
         "ethna/ethna-appobject": "add AppObject features",
         "ethna/ethna-mailsender": "add mail sender features",
         "twig/twig": "1.*",
-        "smarty/smarty": "3.*"
+        "smarty/smarty3": "3.*"
     },
     "scripts": {
         "post-install-cmd": [

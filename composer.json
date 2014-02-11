@@ -28,7 +28,9 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
+        "symfony/event-dispatcher": "2.4.1"
         "ethna/ethna-composer-handler": "*",
+        "ethna/ethna-events": "*",
         "ethna/ethna-generator": "*",
         "ethna/ethna-cli": "*",
         "ethna/ethna-i18n": "*",

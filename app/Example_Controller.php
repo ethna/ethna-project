@@ -15,7 +15,6 @@ call_user_func(function(){
     require_once 'Example_ActionClass.php';
     require_once 'Example_ActionForm.php';
     require_once 'Example_ViewClass.php';
-    require_once 'Example_UrlHandler.php';
 });
 
 class Example_Controller extends Ethna_Controller
@@ -130,33 +129,5 @@ class Example_Controller extends Ethna_Controller
          *  'ExecutionTime',
          */
     );
-
-    /**#@-*/
-
-    /**
-     *  Get Default language and locale setting.
-     *  If you want to change Ethna's output encoding, override this method.
-     *
-     *  @access protected
-     *  @return array   locale name(e.x ja_JP, en_US .etc),
-     *                  system encoding name,
-     *                  client encoding name(= template encoding)
-     *                  (locale name is "ll_cc" format. ll = language code. cc = country code.)
-     */
-    protected function _getDefaultLanguage()
-    {
-        return array('ja_JP', 'UTF-8', 'UTF-8');
-    }
-
-    /**
-     *  set Default Template Engine
-     *
-     *  @access protected
-     *  @param  object  Ethna_Renderer
-     *  @obsolete
-     */
-    protected function _setDefaultTemplateEngine($renderer)
-    {
-    }
 }
 

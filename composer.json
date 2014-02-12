@@ -55,6 +55,9 @@
         "files" : ["vendor/smarty/smarty/libs/Smarty.class.php"]
     },
     "extra": {
-        "ethna-app-name": "example"
+        "ethna-app-name": "example",
+        "branch-alias": {
+            "dev-master": "2.6.x-dev"
+        }
     }
 }

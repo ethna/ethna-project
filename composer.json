@@ -51,7 +51,8 @@
         ]
     },
     "autoload": {
-        "psr-0" : {"Example" : "app/Example"}
+        "psr-0" : {"Example" : "app/Example"},
+        "files" : ["vendor/smarty/smarty/libs/Smarty.class.php"]
     },
     "extra": {
         "ethna-app-name": "example"

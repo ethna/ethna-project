@@ -20,10 +20,10 @@ call_user_func(function(){
 class Example_Controller extends Ethna_Controller
 {
     /** @var    string  Application ID(appid) */
-    protected $appid = 'EXAMPLE';
+    public $appid = 'EXAMPLE';
 
     /** @var    array   forward definition. */
-    protected $forward = array(
+    public $forward = array(
         /*
          *  TODO: write forward definition here.
          *
@@ -36,7 +36,7 @@ class Example_Controller extends Ethna_Controller
     );
 
     /** @var    array   action definition. */
-    protected $action = array(
+    public $action = array(
         /*
          *  TODO: write action definition here.
          *
@@ -52,7 +52,7 @@ class Example_Controller extends Ethna_Controller
     );
 
     /** @var    array   SOAP action definition. */
-    protected $soap_action = array(
+    public $soap_action = array(
         /*
          *  TODO: write action definition for SOAP application here.
          *  Example:
@@ -62,7 +62,7 @@ class Example_Controller extends Ethna_Controller
     );
 
     /** @var    array       application directory. */
-    protected $directory = array(
+    public $directory = array(
         'action'        => 'app/action',
         'action_cli'    => 'app/action_cli',
         'action_xmlrpc' => 'app/action_xmlrpc',
@@ -83,12 +83,12 @@ class Example_Controller extends Ethna_Controller
     );
 
     /** @var    array       database access definition. */
-    protected $db = array(
+    public $db = array(
         ''              => DB_TYPE_RW,
     );
 
     /** @var    array       extention(.php, etc) configuration. */
-    protected $ext = array(
+    public $ext = array(
         'php'           => 'php',
         'tpl'           => 'tpl',
     );
@@ -118,7 +118,7 @@ class Example_Controller extends Ethna_Controller
     /**
      *  @var    array       filter definition.
      */
-    protected $filter = array(
+    public $filter = array(
         /*
          *  TODO: when you use filter, write filter plugin name here.
          *  (If you specify class name, Ethna reads filter class in

@@ -5,7 +5,7 @@ class {$action_form} extends Example_ActionForm
      *  @access protected
      *  @var    array   form definition.
      */
-    protected $form = array(
+    public $form = array(
     );
 }
 

@@ -6,7 +6,7 @@ class {$action_form} extends Example_ActionForm
      *  @var    array   form definition.
      *  @see http://ethna.jp/ethna-document-dev_guide-form.html
      */
-    protected $form = array(
+    public $form = array(
     );
 }
 

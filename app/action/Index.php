@@ -4,7 +4,7 @@ class Example_Form_Index extends Example_ActionForm
     /**
      *  @var      array   form definition.
      */
-    protected $form = array(
+    public $form = array(
        /*
         *  TODO: Write form definition which this action uses.
         *  @see http://ethna.jp/ethna-document-dev_guide-form.html
@@ -32,20 +32,6 @@ class Example_Form_Index extends Example_ActionForm
         *  ),
         */
     );
-
-    /**
-     *  Form input value convert filter : sample
-     *
-     *  @param  mixed   $value  Form Input Value
-     *  @return mixed           Converted result.
-     */
-    /*
-    protected function _filter_sample($value)
-    {
-        //  convert to upper case.
-        return strtoupper($value);
-    }
-    */
 }
 
 class Example_Action_Index extends Example_ActionClass
